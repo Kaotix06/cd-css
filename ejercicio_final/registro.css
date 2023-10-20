@@ -1,0 +1,53 @@
+body {
+  background-image: url('background_register.jpg');
+  background-position: top left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+#contenedor {
+  background-color: palevioletred;
+  text-align: left;
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.seccion {
+  margin-bottom: 20px;
+}
+
+.completo {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.container_section > span:nth-child(3) {
+  display: block;
+  margin-top: 10px;
+}
+
+#direccion_container .completo {
+  margin-bottom: 10px;
+}
+
+#div-button{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.container_section.apellidos {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#div_button button {
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  width: 25%;
+}
