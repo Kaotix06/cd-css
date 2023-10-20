@@ -1,53 +1,57 @@
-body {
-  background-image: url('background_register.jpg');
-  background-position: top left;
+body{
   display: flex;
+  text-align: center;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin-top: 10%;
+  background-image: url(background_register.jpg);
+}
+#contenedor{
+  background-color: rgb(202, 142, 122);
+  color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 5px grey;
+}
+h1{
+  text-align: left;
+  font-weight: 800;
+}
+h2{
   margin: 0;
-}
-#contenedor {
-  background-color: palevioletred;
   text-align: left;
-  padding: 20px;
-  max-width: 600px;
-  border-radius: 5px;
-  margin: 0 auto;
+  font-weight: 700;
 }
-
-.seccion {
-  margin-bottom: 20px;
+input{
+  padding: 0.3rem;
+  margin: 10px;
+  width: 90%;
 }
-
-.completo {
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: top;
+.container_section{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-
-.container_section > span:nth-child(3) {
-  display: block;
-  margin-top: 10px;
+#direccion_container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-#direccion_container .completo {
-  margin-bottom: 10px;
+select{
+  padding: 0.3rem;
+  margin: 10px;
+  width: 90%;
 }
-
-#div-button{
-  margin-top: 20px;
+#div_button{
   text-align: left;
+  margin-left: 2%;
 }
-
-.container_section.apellidos {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-#div_button button {
+button{
   background-color: black;
   color: white;
-  border-radius: 5px;
-  width: 25%;
+  padding: 0.5rem;
+  border: none;
+  width: 20%;
+}
+button:hover{
+  opacity: 0.7;
+  cursor: pointer;
+  transition: 0.3s;
 }
